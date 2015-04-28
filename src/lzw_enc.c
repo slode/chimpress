@@ -12,10 +12,9 @@ int main(void)
   for (short int i = 0; i < 256; i++)
     dictionary[std::string(1, i)] = i;
 
-  char k;
+  char c;
   std::string w;
-  while(fread(&k, 1, sizeof(char), stdin) == sizeof(char)) {
-    char c = k;
+  while(fread(&c, 1, sizeof(char), stdin) == sizeof(char)) {
     std::string wc = w + c;
     if (dictionary.count(wc)) {
       w = wc;
