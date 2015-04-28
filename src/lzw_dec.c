@@ -21,7 +21,7 @@ int main(void)
     fwrite(&w[0], w.size(), sizeof(char), stdout); 
   }
   else {
-    throw "Faulty input!";
+    return -1;
   }
 
   while(fread(&k, 1, sizeof(short int), stdin) == sizeof(short int)) {
@@ -33,7 +33,7 @@ int main(void)
       entry = w + w[0];
     } 
     else {
-      throw "Bad compression.";
+      return -2;
     }
 
     fwrite(&entry[0], entry.size(), sizeof(char), stdout); 
