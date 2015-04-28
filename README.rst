@@ -1,9 +1,17 @@
 Compression utils
 =================
 
-Simple CLI tools to do simple compression. Code for lzw inspired by the lzw code on rosettacode.org.
+Simple CLI tools to do simple compression. The programs are written primarily
+for simplicity and not performance and absolute robustness.
 
-To build, you need autotools::
+The code for the lzw compressor and decompressor is inspired by the lzw code on
+rosettacode.org.
+
+To build, you need autotools. On Ubuntu that means::
+
+    $ sudo apt-get install autotools-dev automake
+
+The utilities can then be installed via the standard::
 
     $ ./autogen.sh
     $ ./configure
