@@ -3,7 +3,6 @@
 
 int main(void)
 {
-  FILE *fp;
   int c, prev;
   int char_count;
 
