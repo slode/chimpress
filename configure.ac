@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.69])
+AC_PREREQ([2.63])
 AC_INIT([chimpress], [0.1])
 AC_CONFIG_SRCDIR([src/lzw_enc.cpp])
 AC_CONFIG_HEADERS([config.h])
